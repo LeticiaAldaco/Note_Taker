@@ -9,6 +9,7 @@ An application that allows users to write and save notes to organize their thoug
 - HTML
 - CSS
 - JSON
+- Javascript
 
 
 # Preview
