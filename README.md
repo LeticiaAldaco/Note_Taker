@@ -17,4 +17,4 @@ An application that allows users to write and save notes to organize their thoug
 
 
 # Link
-
+https://leticiaaldaco.github.io/Note_Taker/
