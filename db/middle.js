@@ -12,14 +12,24 @@ class DataFlow {
   }
 
   write(n) {
-    return writeFile("db/db.json", JSON.stringify(n));
+    return writeFile("db/db.json", JSON.stringify(n, null, 2));
   }
 
   getNotes() {
     return this.read().then((notes) => {
-      let concatNotes;
-      concatNotes = [].concat(JSON.parse(notes));
-      return concatNotes();
+      let parseNotes;
+      try {
+        parseNotes = [].concat(JSON.parse(notes));
+      } catch (error) {
+        parseNotes = [];
+      }
+      return parseNotes;
+    });
+  }
+  createNote(note) {
+    return this.getNotes().then((notes) => {
+      notes.push(note);
+      this.write(notes);
     });
   }
 }
