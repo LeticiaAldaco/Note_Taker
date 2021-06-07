@@ -22,3 +22,6 @@ https://leticiaaldaco.github.io/Note_Taker/
 
 ## Github
 https://github.com/LeticiaAldaco/Note_Taker
+
+## Heroku
+https://floating-garden-42787.herokuapp.com/
